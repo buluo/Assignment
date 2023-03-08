@@ -44,10 +44,10 @@ public class MainController {
         if (date.isBefore(today)) {
             throw new IncorrectDateException("Provided date is expired.");
         }
-        String CutOffTime1 = record1.getCutOffTime(today,date);
-        String CutOffTime2 = record2.getCutOffTime(today,date);
+        String cutOffTime1 = record1.getCutOffTime(today,date);
+        String cutOffTime2 = record2.getCutOffTime(today,date);
 
-        String result = CutOffTime.compareCutOffTime(CutOffTime1, CutOffTime2);
+        String result = CutOffTime.compareCutOffTime(cutOffTime1, cutOffTime2);
 
         return result;
     }
